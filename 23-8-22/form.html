@@ -1,0 +1,138 @@
+<Html>  
+    <head>   
+    <title>  
+    Registration Page  
+    </title> 
+    <style>
+    
+            div
+            {
+                
+                background-color: white;
+                 
+                border-style:solid;  
+                width: min-content;
+                margin-left: 350;
+                
+            }
+            .btn
+            {
+               
+               margin-left: 250;
+            }
+    
+    </style> 
+    </head>  
+    <body bgcolor="lightgrey">  
+    <br>  
+    <br>  
+    <div>
+        <form method="post">  
+      
+            <label> Firstname: </label>         
+            <input type="text" name="firstname" size="15" required/> <br> <br>  
+            <label> Lastname: </label>         
+            <input type="text" name="lastname" size="15" required/> <br> <br> 
+            <label> Contact no: </label>
+
+            <input type="text" name="country code"  value="+91" size="2"/>  
+            <input type="text" name="contact no" size="10"/> <br> <br>
+            <script>
+                function myFunction() {
+                  // Get the value of the input field with id="numb"
+                  let x = document.getElementById("numb").value;
+                  // If x is Not a Number or less than one or greater than 10
+                  let text;
+                  if (isNaN(x) || x.length != 10) {
+                    text = "Input not valid";
+                  } else {
+                    text = "Input OK";
+                  }
+                  document.getElementById("demo").innerHTML = text;
+                }
+                </script>
+                
+                
+                
+            
+            
+            <label>  Address:  </label>  
+            <br>  
+            <textarea cols="80" rows="5" value="address" maxlenght="150"required>  
+            </textarea>  
+            <br> <br>  
+            
+        
+            <label>   
+                City:  
+            </label>   
+            <select required>  
+            <option value="City">   City</option>  
+            <option value="Ahmedabad">Ahmedabad</option>  
+            <option value="Vadodara">Vadodara</option>  
+            <option value="Surat"> Surat</option>  
+            <option value="Rajkot">Rajkot</option>  
+            <option value="Amreli">Amreli</option>  
+            <option value="Jamnagar">Jamnagar</option> 
+            <option value="Junagadh">Junagadh</option> 
+            </select>  
+              
+            <br>  
+            <br>  
+            <label>   
+                State: 
+            </label>
+            <select required>
+                <option value="State">   State</option>  
+                <option value="Gujarat">Gujarat</option>  
+                <option value="Kerala">Kerala</option>  
+                <option value="Maharashtra"> Maharashtra</option>  
+                <option value="Madhya Pradesh">Madhya Pradesh</option>  
+                <option value="Haryana">Haryana</option>  
+                <option value="Himachal Pradesh">Himachal Pradesh</option> 
+                <option value="Karnataka">Karnataka</option> 
+            </select> 
+            <br>
+            <br>
+            <Label>
+                Country:
+            </Label>
+            <select required>
+                <option value="Country"> Country</option>
+                <option value="India"> India</option>
+                <option value="Canada"> Canada</option>
+                <option value="America"> America</option>
+                <option value="Africa"> Africa</option>
+                <option value="Belgium"> Belgium</option>
+                <option value="France"> France</option>
+                <option value="Germany"> Germany</option>
+        
+            </select>
+            
+            <br> <br>  
+            Email:  
+            <input type="email" id="email" name="email" required/> <br>  
+            <script>
+            function ValidateEmailAddress(emailString) {
+                // check for @ sign
+                var atSymbol = emailString.indexOf("@");
+                if(atSymbol < 1) return false;
+                
+                var dot = emailString.indexOf(".");
+                if(dot <= atSymbol + 2) return false;
+                
+                // check that the dot is not at the end
+                if (dot === emailString.length - 1) return false;
+                
+                return true;
+            }  
+            </script>   
+            <br> 
+            Password:  
+            <input type="Password" id="pass" name="pass" required> <br>   
+            <BR>
+            <input type="submit" value="Submit" class="btn"/>  
+            </form>  
+    </div> 
+    </body>  
+    </html>  
